@@ -1,5 +1,5 @@
 {
-  "openapi": "3.1.0",
+  "openapi": "3.0.0",
   "info": {
     "title": "Pet Store API",
     "version": "0.1.0",
@@ -5148,6 +5148,7 @@
         "tags": [
           "user"
         ],
+        "security": [],
         "responses": {
           "201": {
             "description": "Successful operation",
@@ -5184,6 +5185,7 @@
         "tags": [
           "user"
         ],
+        "security": [],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -5225,6 +5227,7 @@
         "tags": [
           "user"
         ],
+        "security": [],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -5266,6 +5269,7 @@
         "tags": [
           "user"
         ],
+        "security": [],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -5500,6 +5504,7 @@
         "tags": [
           "user"
         ],
+        "security": [],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -5548,6 +5553,7 @@
         "tags": [
           "user"
         ],
+        "security": [],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -5589,6 +5595,7 @@
         "tags": [
           "user"
         ],
+        "security": [],
         "responses": {
           "200": {
             "description": "Successful operation",

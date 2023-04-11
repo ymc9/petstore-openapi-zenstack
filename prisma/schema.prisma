@@ -12,6 +12,7 @@ generator client {
     provider = "prisma-client-js"
 }
 
+/// @@openapi.meta({ description: 'A user of the pet store' })
 /// @@allow('create', true)
 /// @@allow('read', true)
 model User {
