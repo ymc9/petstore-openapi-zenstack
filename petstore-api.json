@@ -5138,6 +5138,22 @@
           }
         }
       }
+    },
+    "securitySchemes": {
+      "myBasic": {
+        "type": "http",
+        "scheme": "basic"
+      },
+      "myBearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      },
+      "myApiKey": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-KEY"
+      }
     }
   },
   "paths": {
@@ -6603,5 +6619,16 @@
         ]
       }
     }
-  }
+  },
+  "security": [
+    {
+      "myBasic": []
+    },
+    {
+      "myBearer": []
+    },
+    {
+      "myApiKey": []
+    }
+  ]
 }

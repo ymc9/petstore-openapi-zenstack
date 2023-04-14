@@ -15,6 +15,11 @@ plugin openapi {
     version = '0.1.0'
     description = 'My awesome pet store API'
     output = 'petstore-api.json'
+    securitySchemes = { 
+        myBasic: { type: 'http', scheme: 'basic' },
+        myBearer: { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' },
+        myApiKey: { type: 'apiKey', in: 'header', name: 'X-API-KEY' }
+    }
 }
 
 model User {
