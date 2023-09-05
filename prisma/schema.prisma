@@ -22,11 +22,6 @@ model User {
     /// @omit
     password String
     orders Order[]
-
-    zenstack_guard Boolean @default(true)
-    zenstack_transaction String?
-
-    @@index([zenstack_transaction])
 }
 
 /// @@allow('read', orderId == null || order.user == auth())
@@ -39,11 +34,6 @@ model Pet {
     category String
     order Order? @relation(fields: [orderId], references: [id])
     orderId String?
-
-    zenstack_guard Boolean @default(true)
-    zenstack_transaction String?
-
-    @@index([zenstack_transaction])
 }
 
 /// @@allow('read,create', auth() == user)
@@ -54,9 +44,4 @@ model Order {
     pets Pet[]
     user User @relation(fields: [userId], references: [id])
     userId String
-
-    zenstack_guard Boolean @default(true)
-    zenstack_transaction String?
-
-    @@index([zenstack_transaction])
 }
