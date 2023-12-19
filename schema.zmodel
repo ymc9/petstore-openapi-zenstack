@@ -10,7 +10,6 @@ generator client {
 plugin openapi {
     provider = '@zenstackhq/openapi'
     prefix = '/api'
-    flavor = 'rest'
     title = 'Pet Store API'
     specVersion = '3.0.0'
     version = '0.1.0'
